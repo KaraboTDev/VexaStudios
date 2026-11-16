@@ -19,13 +19,13 @@ html {
 body {
 	background: var(--bg);
 	color: var(--ink);
-	font-family: 'Space Grotesk', system-ui, sans-serif;
+	font-family: 'Inter', system-ui, sans-serif;
 	padding: clamp(8px, 2vw, 28px);
 	line-height: 1.5;
 }
 
 .serif {
-	font-family: 'Newsreader', Georgia, serif;
+	font-family: 'Inter', system-ui, sans-serif;
 }
 
 .shell {
@@ -50,14 +50,23 @@ header {
 }
 
 .logo {
-	font-size: 22px;
-	letter-spacing: 0.04em;
-	color: #555;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	text-decoration: none;
 }
 
+.logo img {
+	display: block;
+	width: 280px;
+	max-width: 42vw;
+	height: auto;
+	object-fit: contain;
+	filter: brightness(0);
+}
+
 .btn {
-	font-family: 'Newsreader', Georgia, serif;
+	font-family: 'Inter', system-ui, sans-serif;
 	font-weight: 600;
 	font-size: 17px;
 	color: var(--ink);
@@ -124,7 +133,7 @@ nav.pill {
 }
 
 nav.pill a {
-	font-family: 'Newsreader', Georgia, serif;
+	font-family: 'Inter', system-ui, sans-serif;
 	font-size: 16px;
 	color: var(--ink);
 	text-decoration: none;
